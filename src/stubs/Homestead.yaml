@@ -1,0 +1,25 @@
+---
+ip: "192.168.10.10"
+memory: 2048
+cpus: 1
+
+provider: virtualbox
+
+authorize: ~/.ssh/id_rsa.pub
+
+keys:
+    - ~/.ssh/id_rsa
+
+folders:
+    - map: ~/Sites
+      to: /home/vagrant/Code
+      type: "nfs"
+
+sites:
+    - map: hilenium.local
+      to: /home/vagrant/Code/hilenium-application/web
+
+databases:
+    - hilenium_application
+    - hilenium_session
+
