@@ -1,6 +1,6 @@
 {
     "name": "hilenium/homestead-symfony2",
-    "description": "A virtual machine for web artisans.",
+    "description": "Homestead customization for Symfony2 applications - includes Apache and Intl.so",
     "require": {
         "php": ">=5.4",
         "symfony/console": "~2.0",
