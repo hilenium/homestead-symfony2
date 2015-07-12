@@ -1,5 +1,5 @@
 {
-    "name": "laravel/homestead",
+    "name": "hilenium/homestead-symfony2",
     "description": "A virtual machine for web artisans.",
     "require": {
         "php": ">=5.4",
@@ -9,8 +9,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Taylor Otwell",
-            "email": "taylorotwell@gmail.com"
+            "name": "Matthew Clarkson",
+            "email": "matt@hilenium.com"
         }
     ],
     "autoload": {
