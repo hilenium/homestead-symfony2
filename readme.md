@@ -1,6 +1,6 @@
 # Homestead Customization for Symfony2
 
-This is a fork of the [Laravel](http://laravel.com/) Homestead development environment customized for [Symfony2](http://symfony.com/) by [Hilenium](http://hilenium.com)
+This is a fork of the [Laravel](http://laravel.com/) Homestead development environment customized for [Symfony2](http://symfony.com/) by [Hilenium](http://hilenium.com).
 
 ## Specifications
 
