@@ -26,7 +26,7 @@ composer global require hilenium/homestead-symfony2
 
 ### Initialization
 
-To initialize a machine use the **init** option.
+To initialize a machine use the **init** option. This will install this [Symfony2 box](https://atlas.hashicorp.com/hilenium)
 
 ```
 homestead init
