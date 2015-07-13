@@ -21,7 +21,3 @@ sites:
     - map: hilenium.local
       to: /home/vagrant/Code/hilenium-application/web
 
-databases:
-    - hilenium_application
-    - hilenium_session
-

@@ -13,6 +13,7 @@ This is a fork of the [Laravel](http://laravel.com/) Homestead development envir
 - Imagick extension
 - Nginx
 - Apache2 pre-installed (but not configured out of the box)
+- Memchached
 - NFS Shared folder (by default)
 
 ## Requirements
@@ -100,7 +101,7 @@ The environment variables you want available on the virtual machine.
 To allow the access over SSH you must set your SSL key.
 
 ```
-ssh-keygen -t rsa -C "you@domain.com"
+ssh-keygen -t rsa -C "you@hilenium.com"
 ```
 
 #### Example
@@ -133,12 +134,10 @@ folders:
       to: /home/vagrant/Sites
 
 sites:
+    - map: phpmyadmin.app
+      to: /home/vagrant/Code/phpmyadmin
     - map: symfony.app
       to: /home/vagrant/Code/hilenium-application/web
-
-databases:
-    - hilenium_application
-    - hilenium_session
 
 ```
 

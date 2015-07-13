@@ -4,7 +4,7 @@ class Homestead
     config.vm.box = "hilenium/homestead-symfony2"
     config.vm.hostname = "homestead"
 
-    # Configure A Private Network IP
+    # Configure A Private Network IPcd
     config.vm.network :private_network, ip: settings["ip"] ||= "192.168.10.10"
 
     # Configure A Few VirtualBox Settings
