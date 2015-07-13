@@ -9,8 +9,9 @@ This is a fork of the [Laravel](http://laravel.com/) Homestead development envir
 - MySQL
 - Redis
 - phpmyadmin
-- Intl.so extension is pre-installed (required for symfony-icu)
-- Nginx pre-configured
+- Intl extension is pre-installed (required for symfony-icu)
+- Imagick extension
+- Nginx
 - Apache2 pre-installed (but not configured out of the box)
 - NFS Shared folder (by default)
 
@@ -20,8 +21,19 @@ The Homestead requires [Vagrant](http://vagrantup.com), [Virtualbox](http://virt
 
 ## phpmyadmin Credentials
 
+Login at [http://phpmyadmin.app]
+
+```
 username: root
 password: secret
+```
+
+## MySQL Credentials
+
+```
+username: homestead
+password: secret
+```
 
 ## Installation
 
@@ -99,6 +111,7 @@ This is an example of the implementation of a Symfony2 application in the **symf
 
 ```
 (...)
+192.168.10.10  phpadmin.app
 192.168.10.10  hilenium.local
 (...)
 ```

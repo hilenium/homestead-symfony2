@@ -1,7 +1,7 @@
 class Homestead
   def Homestead.configure(config, settings)
     # Configure The Box
-    config.vm.box = "laravel/homestead"
+    config.vm.box = "hilenium/homestead-symfony2"
     config.vm.hostname = "homestead"
 
     # Configure A Private Network IP
