@@ -16,6 +16,8 @@ folders:
       type: "nfs"
 
 sites:
+    - map: phpmyadmin.app
+      to: /home/vagrant/Code/phpmyadmin
     - map: hilenium.local
       to: /home/vagrant/Code/hilenium-application/web
 

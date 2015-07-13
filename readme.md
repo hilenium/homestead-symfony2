@@ -6,13 +6,22 @@ This is a fork of the [Laravel](http://laravel.com/) Homestead development envir
 
 - Ubuntu 14.04
 - PHP 5.6
+- MySQL
+- Redis
+- phpmyadmin
 - Intl.so extension is pre-installed (required for symfony-icu)
 - Nginx pre-configured
 - Apache2 pre-installed (but not configured out of the box)
+- NFS Shared folder (by default)
 
 ## Requirements
 
 The Homestead requires [Vagrant](http://vagrantup.com), [Virtualbox](http://virtualbox.org) to work.
+
+## phpmyadmin Credentials
+
+username: root
+password: secret
 
 ## Installation
 
