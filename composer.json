@@ -9,6 +9,10 @@
     "license": "MIT",
     "authors": [
         {
+            "name": "Taylor Otwell",
+            "email": "taylorotwell@gmail.com"
+        },
+        {
             "name": "Matthew Clarkson",
             "email": "matt@hilenium.com"
         }
