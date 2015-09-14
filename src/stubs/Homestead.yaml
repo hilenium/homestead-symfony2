@@ -21,3 +21,9 @@ sites:
     - map: hilenium.local
       to: /home/vagrant/Code/hilenium-application/web
 
+variables:
+    - key: APP_ENV
+      value: local
+
+#sudo ln -s /usr/share/phpmyadmin/ /home/vagrant/Code/phpmyadmin
+#cd ~/Code && serve phpmyadmin.app /home/vagrant/Code/phpmyadmin

@@ -1,5 +1,8 @@
 class Homestead
   def Homestead.configure(config, settings)
+
+   ENV['VAGRANT_DEFAULT_PROVIDER'] = settings["provider"] ||= "virtualbox"
+
     # Configure The Box
     config.vm.box = "hilenium/homestead-symfony2"
     config.vm.hostname = "homestead"
@@ -15,6 +18,7 @@ class Homestead
       vb.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
       vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
       vb.customize ["modifyvm", :id, "--ostype", "Ubuntu_64"]
+      vb.customize ["setextradata", :id, "VBoxInternal2/SharedFoldersEnableSymlinksCreate/v-root", "1"]
     end
 
     # Configure Port Forwarding To The Box
@@ -52,12 +56,19 @@ class Homestead
     end
 
     # Configure All Of The Configured Databases
-    settings["databases"].each do |db|
-        config.vm.provision "shell" do |s|
-            s.path = "./scripts/create-mysql.sh"
-            s.args = [db]
-        end
-    end
+    if settings.has_key?("databases")
+           settings["databases"].each do |db|
+             config.vm.provision "shell" do |s|
+               s.path = scriptDir + "/create-mysql.sh"
+               s.args = [db]
+             end
+
+             config.vm.provision "shell" do |s|
+               s.path = scriptDir + "/create-postgres.sh"
+               s.args = [db]
+             end
+           end
+     end
 
     # Configure All Of The Server Environment Variables
     if settings.has_key?("variables")
