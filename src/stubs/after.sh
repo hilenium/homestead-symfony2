@@ -4,6 +4,7 @@
 # add any commands you wish to this file and they will
 # be run after the Homestead machine is provisioned.
 
+sudo apt-get install acl
 sudo apt-get install imagemagick php5-imagick -y
 sudo apt-get install php5-intl -y
 sudo apt-get install phpmyadmin -y
